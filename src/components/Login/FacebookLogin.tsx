@@ -47,12 +47,12 @@ export default function FacebookLogin() {
 
           {/* RIGHT */}
           <div className="md:w-1/2 text-center md:text-right">
-                        <h1
-                className="text-[#1877f2] text-6xl font-extrabold mb-4"
-                style={{ fontFamily: "Bebas Neue, sans-serif" }}
-                >
-                Facebook
-                </h1>
+            <h1
+              className="text-[#1877f2] text-6xl font-extrabold mb-4"
+              style={{ fontFamily: "Bebas Neue, sans-serif" }}
+            >
+              Facebook
+            </h1>
 
             <p className="text-2xl text-gray-800 leading-snug">
               يمنحك فيسبوك إمكانية التواصل مع الأشخاص<br />
@@ -80,21 +80,21 @@ export default function FacebookLogin() {
                 className="w-full mb-3 px-4 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:border-[#1877f2]"
               />
 
-                <button
+              <button
                 className="
-                    w-full bg-[#1877f2] hover:bg-[#166fe5] text-white font-bold text-lg py-3 rounded-md
-                    transition-all duration-150
-                    active:scale-[0.97]
-                    active:brightness-90
-                    hover:shadow-md
-                    cursor-pointer
-                    select-none
+                  w-full bg-[#1877f2] hover:bg-[#166fe5] text-white font-bold text-lg py-3 rounded-md
+                  transition-all duration-150
+                  active:scale-[0.97]
+                  active:brightness-90
+                  hover:shadow-md
+                  cursor-pointer
+                  select-none
                 "
                 onClick={handleLogin}
                 disabled={isLoading}
-                >
+              >
                 {loginMutation.isPending ? "جاري تسجيل الدخول..." : "تسجيل الدخول"}
-                </button>
+              </button>
 
               <a href="#" className="block text-center text-[#1877f2] text-sm mt-4 hover:underline">
                 هل نسيت كلمة السر؟
@@ -104,24 +104,25 @@ export default function FacebookLogin() {
 
               <button
                 className="
-                    block mx-auto bg-[#42b72a] hover:bg-[#36a420]
-                    text-white font-bold text-base px-6 py-3 rounded-md
-                    transition-all duration-150
-                    active:scale-[0.97]
-                    active:brightness-90
-                    hover:shadow-md
-                    cursor-pointer
-                    select-none
+                  block mx-auto bg-[#42b72a] hover:bg-[#36a420]
+                  text-white font-bold text-base px-6 py-3 rounded-md
+                  transition-all duration-150
+                  active:scale-[0.97]
+                  active:brightness-90
+                  hover:shadow-md
+                  cursor-pointer
+                  select-none
                 "
                 onClick={handleRegister}
                 disabled={isLoading}
-                >
+              >
                 {registerMutation.isPending ? "جاري إنشاء الحساب..." : "إنشاء حساب جديد"}
-                </button>
+              </button>
+
               {message ? (
                 <p className="mt-4 text-center text-sm text-gray-700">{message}</p>
               ) : null}
-                            </div>
+            </div>
           </div>
 
         </div>
