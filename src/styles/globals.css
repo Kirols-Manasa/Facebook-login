@@ -1,0 +1,10 @@
+ /* 1) Tailwind أولاً */
+@import "tailwindcss";
+
+html {
+  font-size: 110%;
+}
+
+body {
+  overflow-x: hidden;
+}
