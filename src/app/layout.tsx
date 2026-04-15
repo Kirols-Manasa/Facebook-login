@@ -49,10 +49,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="en" dir="ltr" className="antialiased">
+    <html lang="en" dir="ltr" className="antialiased">
+      <head>
+        <meta name="google-site-verification" content="6gbMHsyf9v0uC5eznZfuwomHsuDLYWiTj8nMCK6-GAE" />
+      </head>
+
       <body>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
-     </html>
+    </html>
   );
 }
